@@ -567,13 +567,13 @@ img {
 }
 
 .skills__figma {
-  width: 0%;
+  width: 30%;
 }
 .skills__sketch {
   width: 0%;
 }
 .skills__photoshop {
-  width: 0%;
+  width: 50%;
 }
 
 .skills__open {
@@ -760,6 +760,10 @@ img {
   visibility: visible;
 }
 
+.cards {
+  display: none;
+}
+
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: initial;
@@ -846,7 +850,7 @@ img {
 }
 
 /*==================== TESTIMONIAL ====================*/
-testimonial__container {
+.testimonial__container {
   padding: 1rem 0.75rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -1388,7 +1392,11 @@ textarea::placeholder {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1500px) {
+  * {
+    font-size: 77%;
+  }
+
   .container {
     width: 65%;
     margin: 0 auto;
@@ -1442,7 +1450,7 @@ textarea::placeholder {
   .change-theme {
     position: absolute;
     font-size: 1.2rem;
-    top: -17px;
+    top: -12px;
   }
 
   .home__container.container {
@@ -1530,6 +1538,10 @@ textarea::placeholder {
     font-size: 1rem;
   }
 
+  .skills__number {
+    font-size: 1rem;
+  }
+
   .qualification__button {
     font-size: 1.4rem;
   }
@@ -1545,7 +1557,8 @@ textarea::placeholder {
 
   .qualification__line {
     width: 2px;
-    height: 100%;
+    height: 110%;
+    transform: translate(3.3px, -7.5px);
   }
 
   .services__container {
@@ -1556,6 +1569,10 @@ textarea::placeholder {
   .cards {
     display: flex;
     gap: 2rem;
+  }
+
+  .cards {
+    font-size: 2.5em;
   }
 
   .card {
@@ -1619,6 +1636,10 @@ textarea::placeholder {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
+  }
+
+  .card__flipped_icon {
+    font-size: 1rem;
   }
 
   /* *************************************************************************** */
@@ -1697,9 +1718,14 @@ textarea::placeholder {
 
   .footer__links {
     justify-self: center;
+    font-size: 2rem;
   }
 
   .footer__socials {
     justify-self: end;
+  }
+
+  .footer__social-icon {
+    font-size: 2rem;
   }
 }
